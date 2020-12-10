@@ -1,0 +1,6 @@
+framework module Pods_ZMScan_Example {
+  umbrella header "Pods-ZMScan_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

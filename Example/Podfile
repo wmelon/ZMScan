@@ -1,10 +1,11 @@
 use_frameworks!
 
-platform :ios, '9.0'
+platform :ios, '10.0'
 
 target 'ZMScan_Example' do
   pod 'ZMScan', :path => '../'
-
+  pod 'WeScan'
+  
   target 'ZMScan_Tests' do
     inherit! :search_paths
 

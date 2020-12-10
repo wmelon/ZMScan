@@ -1,0 +1,22 @@
+{
+  "name": "ZMScan",
+  "version": "0.1.0",
+  "summary": "A short description of ZMScan.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/wmelon/ZMScan",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "wmelon": "shijia.chen@zhangmen.com"
+  },
+  "source": {
+    "git": "https://github.com/wmelon/ZMScan.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "ZMScan/Classes/**/*"
+}

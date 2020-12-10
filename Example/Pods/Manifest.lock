@@ -1,0 +1,23 @@
+PODS:
+  - WeScan (1.7.0)
+  - ZMScan (0.1.0)
+
+DEPENDENCIES:
+  - WeScan
+  - ZMScan (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - WeScan
+
+EXTERNAL SOURCES:
+  ZMScan:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WeScan: fed582f6c38014d529afb5aa9ffd1bad38fc72b7
+  ZMScan: 4bd4d5f273b2cfb31281b4bc0af6f51faba65d8a
+
+PODFILE CHECKSUM: f22030b364d4c1d10d21a7be76c4c2af1ac8362f
+
+COCOAPODS: 1.10.0

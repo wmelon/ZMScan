@@ -1,0 +1,6 @@
+framework module ZMScan {
+  umbrella header "ZMScan-umbrella.h"
+
+  export *
+  module * { export * }
+}

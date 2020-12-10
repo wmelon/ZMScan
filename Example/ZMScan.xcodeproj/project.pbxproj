@@ -22,6 +22,19 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		6BAA7BD2257DDEFB00FE7650 /* ZMImageScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA7BD1257DDEFB00FE7650 /* ZMImageScannerViewController.m */; };
+		6BAA7BD7257DDFCE00FE7650 /* ZMImageScannerResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA7BD6257DDFCE00FE7650 /* ZMImageScannerResults.m */; };
+		6BAA7BDF257DFA4C00FE7650 /* ZMQuadrilateral.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAA7BDE257DFA4C00FE7650 /* ZMQuadrilateral.m */; };
+		6BAAF8A7257E4F6F00B77AF1 /* ZMVisionRectangleDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAF8A6257E4F6F00B77AF1 /* ZMVisionRectangleDetector.m */; };
+		6BAAF8AC257E598200B77AF1 /* ZMCIRectangleDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAF8AB257E598200B77AF1 /* ZMCIRectangleDetector.m */; };
+		6BAAF8B1257E5CE200B77AF1 /* NSArray+ZMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAF8B0257E5CE200B77AF1 /* NSArray+ZMUtils.m */; };
+		6BAAF8B8257F171E00B77AF1 /* ZMEditScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAF8B7257F171E00B77AF1 /* ZMEditScanViewController.m */; };
+		6BAAF8BD257F1D2E00B77AF1 /* UIImage+ZMOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAF8BC257F1D2E00B77AF1 /* UIImage+ZMOrientation.m */; };
+		6BAAF8C2257F213300B77AF1 /* ZMQuadrilateralView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAF8C1257F213300B77AF1 /* ZMQuadrilateralView.m */; };
+		6BAAF8C7257F238500B77AF1 /* ZMEditScanCornerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAF8C6257F238500B77AF1 /* ZMEditScanCornerView.m */; };
+		6BAAF8E62580A0DE00B77AF1 /* ZMZoomGestureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAF8E52580A0DE00B77AF1 /* ZMZoomGestureController.m */; };
+		6BAAF8EF2580C44A00B77AF1 /* ZMReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAF8EE2580C44A00B77AF1 /* ZMReviewViewController.m */; };
+		6BFAFF6D2581CF34003EF330 /* ZMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAFF6C2581CF34003EF330 /* ZMUtils.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -56,14 +69,40 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6DFF7BCFF520C02ECC03919F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6BAA7BD0257DDEFB00FE7650 /* ZMImageScannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMImageScannerViewController.h; sourceTree = "<group>"; };
+		6BAA7BD1257DDEFB00FE7650 /* ZMImageScannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMImageScannerViewController.m; sourceTree = "<group>"; };
+		6BAA7BD5257DDFCE00FE7650 /* ZMImageScannerResults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMImageScannerResults.h; sourceTree = "<group>"; };
+		6BAA7BD6257DDFCE00FE7650 /* ZMImageScannerResults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMImageScannerResults.m; sourceTree = "<group>"; };
+		6BAA7BDD257DFA4C00FE7650 /* ZMQuadrilateral.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMQuadrilateral.h; sourceTree = "<group>"; };
+		6BAA7BDE257DFA4C00FE7650 /* ZMQuadrilateral.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMQuadrilateral.m; sourceTree = "<group>"; };
+		6BAAF8A5257E4F6F00B77AF1 /* ZMVisionRectangleDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMVisionRectangleDetector.h; sourceTree = "<group>"; };
+		6BAAF8A6257E4F6F00B77AF1 /* ZMVisionRectangleDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMVisionRectangleDetector.m; sourceTree = "<group>"; };
+		6BAAF8AA257E598200B77AF1 /* ZMCIRectangleDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMCIRectangleDetector.h; sourceTree = "<group>"; };
+		6BAAF8AB257E598200B77AF1 /* ZMCIRectangleDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMCIRectangleDetector.m; sourceTree = "<group>"; };
+		6BAAF8AF257E5CE200B77AF1 /* NSArray+ZMUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+ZMUtils.h"; sourceTree = "<group>"; };
+		6BAAF8B0257E5CE200B77AF1 /* NSArray+ZMUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ZMUtils.m"; sourceTree = "<group>"; };
+		6BAAF8B6257F171E00B77AF1 /* ZMEditScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMEditScanViewController.h; sourceTree = "<group>"; };
+		6BAAF8B7257F171E00B77AF1 /* ZMEditScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMEditScanViewController.m; sourceTree = "<group>"; };
+		6BAAF8BB257F1D2E00B77AF1 /* UIImage+ZMOrientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZMOrientation.h"; sourceTree = "<group>"; };
+		6BAAF8BC257F1D2E00B77AF1 /* UIImage+ZMOrientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZMOrientation.m"; sourceTree = "<group>"; };
+		6BAAF8C0257F213300B77AF1 /* ZMQuadrilateralView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMQuadrilateralView.h; sourceTree = "<group>"; };
+		6BAAF8C1257F213300B77AF1 /* ZMQuadrilateralView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMQuadrilateralView.m; sourceTree = "<group>"; };
+		6BAAF8C5257F238500B77AF1 /* ZMEditScanCornerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMEditScanCornerView.h; sourceTree = "<group>"; };
+		6BAAF8C6257F238500B77AF1 /* ZMEditScanCornerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMEditScanCornerView.m; sourceTree = "<group>"; };
+		6BAAF8E42580A0DE00B77AF1 /* ZMZoomGestureController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMZoomGestureController.h; sourceTree = "<group>"; };
+		6BAAF8E52580A0DE00B77AF1 /* ZMZoomGestureController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMZoomGestureController.m; sourceTree = "<group>"; };
+		6BAAF8ED2580C44A00B77AF1 /* ZMReviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMReviewViewController.h; sourceTree = "<group>"; };
+		6BAAF8EE2580C44A00B77AF1 /* ZMReviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMReviewViewController.m; sourceTree = "<group>"; };
+		6BFAFF6B2581CF34003EF330 /* ZMUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMUtils.h; sourceTree = "<group>"; };
+		6BFAFF6C2581CF34003EF330 /* ZMUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMUtils.m; sourceTree = "<group>"; };
+		6DFF7BCFF520C02ECC03919F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97853C2B37824CB11600D2F6 /* Pods-ZMScan_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMScan_Example.release.xcconfig"; path = "Target Support Files/Pods-ZMScan_Example/Pods-ZMScan_Example.release.xcconfig"; sourceTree = "<group>"; };
-		9BB07BF92BCBBDBE27771C82 /* ZMScan.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZMScan.podspec; path = ../ZMScan.podspec; sourceTree = "<group>"; };
+		9BB07BF92BCBBDBE27771C82 /* ZMScan.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZMScan.podspec; path = ../ZMScan.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D232701B7848D726F4641BD /* Pods-ZMScan_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMScan_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZMScan_Tests/Pods-ZMScan_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A229DE4AE615EEFFB4C7BD53 /* Pods_ZMScan_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZMScan_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A67B969D9585E991E753E0CF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A67B969D9585E991E753E0CF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B0AA1469B6E11B60B281A6E6 /* Pods-ZMScan_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMScan_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZMScan_Example/Pods-ZMScan_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D45AB34120BA082A0E823572 /* Pods-ZMScan_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMScan_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZMScan_Tests/Pods-ZMScan_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED95B2C25649F24A5460CEB6 /* Pods_ZMScan_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZMScan_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +171,7 @@
 		6003F593195388D20070C39A /* Example for ZMScan */ = {
 			isa = PBXGroup;
 			children = (
+				6BAA7BCC257DDE1900FE7650 /* ZMScan */,
 				6003F59C195388D20070C39A /* ZMAppDelegate.h */,
 				6003F59D195388D20070C39A /* ZMAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -185,6 +225,63 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		6BAA7BCC257DDE1900FE7650 /* ZMScan */ = {
+			isa = PBXGroup;
+			children = (
+				6BAA7BCD257DDEC000FE7650 /* Controllers */,
+			);
+			name = ZMScan;
+			sourceTree = "<group>";
+		};
+		6BAA7BCD257DDEC000FE7650 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6BAA7BCF257DDEE000FE7650 /* Edit */,
+				6BAA7BCE257DDEDB00FE7650 /* Scan */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6BAA7BCE257DDEDB00FE7650 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				6BAA7BD0257DDEFB00FE7650 /* ZMImageScannerViewController.h */,
+				6BAA7BD1257DDEFB00FE7650 /* ZMImageScannerViewController.m */,
+				6BAA7BD5257DDFCE00FE7650 /* ZMImageScannerResults.h */,
+				6BAA7BD6257DDFCE00FE7650 /* ZMImageScannerResults.m */,
+				6BAA7BDD257DFA4C00FE7650 /* ZMQuadrilateral.h */,
+				6BAA7BDE257DFA4C00FE7650 /* ZMQuadrilateral.m */,
+				6BAAF8A5257E4F6F00B77AF1 /* ZMVisionRectangleDetector.h */,
+				6BAAF8A6257E4F6F00B77AF1 /* ZMVisionRectangleDetector.m */,
+				6BAAF8AA257E598200B77AF1 /* ZMCIRectangleDetector.h */,
+				6BAAF8AB257E598200B77AF1 /* ZMCIRectangleDetector.m */,
+				6BAAF8AF257E5CE200B77AF1 /* NSArray+ZMUtils.h */,
+				6BAAF8B0257E5CE200B77AF1 /* NSArray+ZMUtils.m */,
+				6BAAF8B6257F171E00B77AF1 /* ZMEditScanViewController.h */,
+				6BAAF8B7257F171E00B77AF1 /* ZMEditScanViewController.m */,
+				6BAAF8BB257F1D2E00B77AF1 /* UIImage+ZMOrientation.h */,
+				6BAAF8BC257F1D2E00B77AF1 /* UIImage+ZMOrientation.m */,
+				6BAAF8C0257F213300B77AF1 /* ZMQuadrilateralView.h */,
+				6BAAF8C1257F213300B77AF1 /* ZMQuadrilateralView.m */,
+				6BAAF8C5257F238500B77AF1 /* ZMEditScanCornerView.h */,
+				6BAAF8C6257F238500B77AF1 /* ZMEditScanCornerView.m */,
+				6BAAF8E42580A0DE00B77AF1 /* ZMZoomGestureController.h */,
+				6BAAF8E52580A0DE00B77AF1 /* ZMZoomGestureController.m */,
+				6BAAF8ED2580C44A00B77AF1 /* ZMReviewViewController.h */,
+				6BAAF8EE2580C44A00B77AF1 /* ZMReviewViewController.m */,
+				6BFAFF6B2581CF34003EF330 /* ZMUtils.h */,
+				6BFAFF6C2581CF34003EF330 /* ZMUtils.m */,
+			);
+			name = Scan;
+			sourceTree = "<group>";
+		};
+		6BAA7BCF257DDEE000FE7650 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Edit;
+			sourceTree = "<group>";
+		};
 		9983F5F41816C70B4D1D6F38 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,7 +290,6 @@
 				D45AB34120BA082A0E823572 /* Pods-ZMScan_Tests.debug.xcconfig */,
 				9D232701B7848D726F4641BD /* Pods-ZMScan_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +344,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = wmelon;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = LZNBWDDMT8;
+						LastSwiftMigration = 1220;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,8 +358,24 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
+				de,
+				ar,
+				"zh-Hans",
+				es,
+				"es-419",
+				it,
+				cs,
+				"zh-Hant",
+				hu,
+				tr,
+				pl,
+				"pt-BR",
+				ru,
+				fr,
+				"pt-PT",
 			);
 			mainGroup = 6003F581195388D10070C39A;
 			productRefGroup = 6003F58B195388D20070C39A /* Products */;
@@ -324,10 +440,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ZMScan_Example/Pods-ZMScan_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/WeScan/WeScan.framework",
 				"${BUILT_PRODUCTS_DIR}/ZMScan/ZMScan.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WeScan.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZMScan.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,9 +482,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BAA7BD2257DDEFB00FE7650 /* ZMImageScannerViewController.m in Sources */,
+				6BFAFF6D2581CF34003EF330 /* ZMUtils.m in Sources */,
 				6003F59E195388D20070C39A /* ZMAppDelegate.m in Sources */,
+				6BAAF8B1257E5CE200B77AF1 /* NSArray+ZMUtils.m in Sources */,
+				6BAAF8EF2580C44A00B77AF1 /* ZMReviewViewController.m in Sources */,
+				6BAA7BDF257DFA4C00FE7650 /* ZMQuadrilateral.m in Sources */,
+				6BAA7BD7257DDFCE00FE7650 /* ZMImageScannerResults.m in Sources */,
+				6BAAF8AC257E598200B77AF1 /* ZMCIRectangleDetector.m in Sources */,
+				6BAAF8C7257F238500B77AF1 /* ZMEditScanCornerView.m in Sources */,
+				6BAAF8B8257F171E00B77AF1 /* ZMEditScanViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* ZMViewController.m in Sources */,
+				6BAAF8E62580A0DE00B77AF1 /* ZMZoomGestureController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				6BAAF8C2257F213300B77AF1 /* ZMQuadrilateralView.m in Sources */,
+				6BAAF8BD257F1D2E00B77AF1 /* UIImage+ZMOrientation.m in Sources */,
+				6BAAF8A7257E4F6F00B77AF1 /* ZMVisionRectangleDetector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,12 +625,17 @@
 			baseConfigurationReference = B0AA1469B6E11B60B281A6E6 /* Pods-ZMScan_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = LZNBWDDMT8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZMScan/ZMScan-Prefix.pch";
 				INFOPLIST_FILE = "ZMScan/ZMScan-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cangdou.customer1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZMScan/ZMScan_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -510,12 +646,16 @@
 			baseConfigurationReference = 97853C2B37824CB11600D2F6 /* Pods-ZMScan_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = LZNBWDDMT8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZMScan/ZMScan-Prefix.pch";
 				INFOPLIST_FILE = "ZMScan/ZMScan-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cangdou.customer1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZMScan/ZMScan_Example-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
