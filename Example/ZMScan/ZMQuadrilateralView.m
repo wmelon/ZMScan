@@ -219,65 +219,70 @@
     
     return validPoint;
 }
-- (CGFloat)sign:(CGPoint)point0 point1:(CGPoint)point1 point2:(CGPoint)point2 {
-    return (point0.x - point2.x) * (point1.y - point2.y) - (point1.x - point2.x) * (point0.y - point2.y);
-}
+
 /// 检测是否是凹四边形
 - (BOOL)validConcaveQuad:(ZMQuadrilateral *)quad point:(CGPoint)point position:(ZMCornerPosition)position{
     BOOL isConcave = NO;
-    if (point.y <= 0) return isConcave;
     
     switch (position) {
         case ZMCornerPosition_topLeft:
         {
-            CGPoint point0 = quad.topRight;
-            CGPoint point1 = quad.bottomLeft;
-            CGPoint point2 = quad.bottomRight;
-            
-            BOOL b0 = [self sign:point point1:point0 point2:point1] < 0.0f;
-            BOOL b1 = [self sign:point point1:point1 point2:point2] < 0.0f;
-            BOOL b2 = [self sign:point point1:point2 point2:point0] < 0.0f;
-            
-            isConcave = ((b0 == b1) && (b1 == b2));
+            if (point.y < quad.bottomLeft.y && point.y < quad.bottomRight.y && point.x < quad.topRight.x && point.x < quad.bottomRight.x){
+                UIBezierPath *path  = [UIBezierPath new];
+                [path moveToPoint:quad.topRight];
+                [path addLineToPoint:quad.bottomRight];
+                [path addLineToPoint:quad.bottomLeft];
+                [path closePath];
+                
+                isConcave = [path containsPoint:point];
+            } else {
+                isConcave = YES;
+            }
         }
             break;
         case ZMCornerPosition_topRight:
         {
-            CGPoint point0 = quad.topLeft;
-            CGPoint point1 = quad.bottomLeft;
-            CGPoint point2 = quad.bottomRight;
-            
-            BOOL b0 = [self sign:point point1:point0 point2:point1] < 0.0f;
-            BOOL b1 = [self sign:point point1:point1 point2:point2] < 0.0f;
-            BOOL b2 = [self sign:point point1:point2 point2:point0] < 0.0f;
-            
-            isConcave = ((b0 == b1) && (b1 == b2));
+            if (point.y < quad.bottomRight.y && point.y < quad.bottomLeft.y && point.x > quad.bottomLeft.x && point.x > quad.topLeft.x){
+                UIBezierPath *path  = [UIBezierPath new];
+                [path moveToPoint:quad.topLeft];
+                [path addLineToPoint:quad.bottomRight];
+                [path addLineToPoint:quad.bottomLeft];
+                [path closePath];
+                
+                isConcave = [path containsPoint:point];
+            } else {
+                isConcave = YES;
+            }
         }
             break;
         case ZMCornerPosition_bottomLeft:
         {
-            CGPoint point0 = quad.topRight;
-            CGPoint point1 = quad.topLeft;
-            CGPoint point2 = quad.bottomRight;
-            
-            BOOL b0 = [self sign:point point1:point0 point2:point1] < 0.0f;
-            BOOL b1 = [self sign:point point1:point1 point2:point2] < 0.0f;
-            BOOL b2 = [self sign:point point1:point2 point2:point0] < 0.0f;
-            
-            isConcave = ((b0 == b1) && (b1 == b2));
+            if (point.x < quad.bottomRight.x && point.x < quad.topRight.x && point.y > quad.topLeft.y && point.y > quad.topRight.y){
+                UIBezierPath *path  = [UIBezierPath new];
+                [path moveToPoint:quad.topRight];
+                [path addLineToPoint:quad.bottomRight];
+                [path addLineToPoint:quad.topLeft];
+                [path closePath];
+                
+                isConcave = [path containsPoint:point];
+            } else {
+                isConcave = YES;
+            }
         }
             break;
         case ZMCornerPosition_bottomRight:
         {
-            CGPoint point0 = quad.topRight;
-            CGPoint point1 = quad.bottomLeft;
-            CGPoint point2 = quad.topLeft;
-            
-            BOOL b0 = [self sign:point point1:point0 point2:point1] < 0.0f;
-            BOOL b1 = [self sign:point point1:point1 point2:point2] < 0.0f;
-            BOOL b2 = [self sign:point point1:point2 point2:point0] < 0.0f;
-            
-            isConcave = ((b0 == b1) && (b1 == b2));
+            if (point.x > quad.bottomLeft.x && point.x > quad.topLeft.x && point.y > quad.topRight.y && point.y > quad.topLeft.y){
+                UIBezierPath *path  = [UIBezierPath new];
+                [path moveToPoint:quad.topRight];
+                [path addLineToPoint:quad.topLeft];
+                [path addLineToPoint:quad.bottomLeft];
+                [path closePath];
+                
+                isConcave = [path containsPoint:point];
+            } else {
+                isConcave = YES;
+            }
         }
             break;
             

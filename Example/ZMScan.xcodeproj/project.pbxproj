@@ -236,7 +236,6 @@
 		6BAA7BCD257DDEC000FE7650 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				6BAA7BCF257DDEE000FE7650 /* Edit */,
 				6BAA7BCE257DDEDB00FE7650 /* Scan */,
 			);
 			name = Controllers;
@@ -273,13 +272,6 @@
 				6BFAFF6C2581CF34003EF330 /* ZMUtils.m */,
 			);
 			name = Scan;
-			sourceTree = "<group>";
-		};
-		6BAA7BCF257DDEE000FE7650 /* Edit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Edit;
 			sourceTree = "<group>";
 		};
 		9983F5F41816C70B4D1D6F38 /* Pods */ = {
