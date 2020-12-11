@@ -35,6 +35,7 @@
 		6BAAF8E62580A0DE00B77AF1 /* ZMZoomGestureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAF8E52580A0DE00B77AF1 /* ZMZoomGestureController.m */; };
 		6BAAF8EF2580C44A00B77AF1 /* ZMReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAF8EE2580C44A00B77AF1 /* ZMReviewViewController.m */; };
 		6BFAFF6D2581CF34003EF330 /* ZMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAFF6C2581CF34003EF330 /* ZMUtils.m */; };
+		6BFAFF8325824EE9003EF330 /* ZMMaterialCollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAFF8225824EE9003EF330 /* ZMMaterialCollCell.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -95,6 +96,8 @@
 		6BAAF8EE2580C44A00B77AF1 /* ZMReviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMReviewViewController.m; sourceTree = "<group>"; };
 		6BFAFF6B2581CF34003EF330 /* ZMUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMUtils.h; sourceTree = "<group>"; };
 		6BFAFF6C2581CF34003EF330 /* ZMUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMUtils.m; sourceTree = "<group>"; };
+		6BFAFF8125824EE9003EF330 /* ZMMaterialCollCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMaterialCollCell.h; sourceTree = "<group>"; };
+		6BFAFF8225824EE9003EF330 /* ZMMaterialCollCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMaterialCollCell.m; sourceTree = "<group>"; };
 		6DFF7BCFF520C02ECC03919F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -228,6 +231,7 @@
 		6BAA7BCC257DDE1900FE7650 /* ZMScan */ = {
 			isa = PBXGroup;
 			children = (
+				6BFAFF8025824EB3003EF330 /* Views */,
 				6BAA7BCD257DDEC000FE7650 /* Controllers */,
 			);
 			name = ZMScan;
@@ -272,6 +276,15 @@
 				6BFAFF6C2581CF34003EF330 /* ZMUtils.m */,
 			);
 			name = Scan;
+			sourceTree = "<group>";
+		};
+		6BFAFF8025824EB3003EF330 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6BFAFF8125824EE9003EF330 /* ZMMaterialCollCell.h */,
+				6BFAFF8225824EE9003EF330 /* ZMMaterialCollCell.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		9983F5F41816C70B4D1D6F38 /* Pods */ = {
@@ -477,6 +490,7 @@
 				6BAA7BD2257DDEFB00FE7650 /* ZMImageScannerViewController.m in Sources */,
 				6BFAFF6D2581CF34003EF330 /* ZMUtils.m in Sources */,
 				6003F59E195388D20070C39A /* ZMAppDelegate.m in Sources */,
+				6BFAFF8325824EE9003EF330 /* ZMMaterialCollCell.m in Sources */,
 				6BAAF8B1257E5CE200B77AF1 /* NSArray+ZMUtils.m in Sources */,
 				6BAAF8EF2580C44A00B77AF1 /* ZMReviewViewController.m in Sources */,
 				6BAA7BDF257DFA4C00FE7650 /* ZMQuadrilateral.m in Sources */,
